@@ -1,0 +1,31 @@
+{
+  "name": "frontline-organic-products",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./pages/index.html -p 3000 --watch --open",
+    "build" : "parcel build index.html",
+    "pretty": "npx prettier --config ./utilities/prettier/.prettierrc --ignore-path ./utilities/prettier/.prettierignore --write ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benowusulink/frontline-organic-products.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benowusulink/frontline-organic-products/issues"
+  },
+  "homepage": "https://github.com/benowusulink/frontline-organic-products#readme",
+  "description": "",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "parcel": "^2.13.3",
+    "prettier": "3.4.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --config ./utilities/prettier/.prettierrc --ignore-path ./utilities/prettier/.prettierignore --write ./"
+  }
+}
