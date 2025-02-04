@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel serve ./pages/index.html -p 3000 --open ",
-    "build" : "parcel build index.html",
+    "build": "parcel build index.html",
     "pretty": "npx prettier --config ./utilities/prettier/.prettierrc --ignore-path ./utilities/prettier/.prettierignore --write ./"
   },
   "repository": {
