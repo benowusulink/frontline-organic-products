@@ -3,3 +3,61 @@
   border-bottom: solid var(--main-color) 0.5px;
   background-color: rgba(243, 241, 213, 0.8);
 }
+
+#checkout-page-main {
+  min-width: 100vw;
+  min-height: 120vh;
+  padding-top: 14vh;
+  background-color: var(--main-color);
+  color: rgba(243, 241, 213, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#checkout-page-main-h1 {
+  border-bottom: rgba(243, 241, 213, 0.8) solid 2px;
+  font-family: headerFont;
+  height: 15%;
+}
+
+#checkout-page-main-section {
+  height: 80vh;
+  width: 80%;
+
+  background-color: rgba(243, 241, 213, 0.8);
+  color: var(--main-color);
+  border-radius: 5px;
+}
+
+#checkout-page-main-section-div {
+  display: none;
+}
+
+#checkout-page-main-section-article {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+#checkout-page-main-section-article h2 {
+  margin-bottom: 5%;
+  line-height: 150%;
+}
+
+#checkout-page-main-section-article a {
+  color: rgba(243, 241, 213, 0.8);
+  background-color: var(--main-color);
+  padding: 1.5%;
+  transition: 0.3s;
+}
+#checkout-page-main-section-article a:hover {
+  padding: 2.5%;
+  color: var(--text-color);
+}
