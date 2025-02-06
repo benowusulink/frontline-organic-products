@@ -1,0 +1,5 @@
+#header-nav-ul2 li[id="header-nav-ul2-selected"] {
+  color: var(--main-color);
+  border-bottom: solid var(--main-color) 0.5px;
+  background-color: rgba(243, 241, 213, 0.8);
+}

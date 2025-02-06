@@ -280,16 +280,18 @@ a {
   width: 30%;
   height: 80%;
   background-color: var(--main-color);
-  border: var(--text-color) solid 4px;
+  border: var(--text-color) solid 2px;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  transform: rotate(-3deg);
+  transform: rotate(-3deg) scale(0.95);
   border-radius: 8px;
   color: var(--text-color);
+  box-sizing: border-box;
 }
 .landing-page-product-section-article1-div:hover {
-  transform: rotate(0deg) scale(1.03);
+  transform: rotate(0deg) scale(1);
+  padding: 0.5%;
 }
 
 .landing-page-product-section-article1-div img {
@@ -297,7 +299,6 @@ a {
   height: 40%;
   box-sizing: border-box;
   border-radius: 5px;
-  border: var(--text-color) 4px solid;
 }
 
 .landing-page-product-section-article1-div p {
@@ -306,9 +307,8 @@ a {
   box-sizing: border-box;
   padding: 4%;
   font-size: 85%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2%;
+
   color: var(--text-color);
 }
 
@@ -324,9 +324,10 @@ a {
   margin-bottom: 5%;
   border-radius: 5px;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 .landing-page-product-section-article1-div a:hover {
-  padding: 1.5%;
+  padding: 5%;
   color: var(--main-color);
   background-color: var(--text-color);
 }
@@ -372,9 +373,10 @@ a {
   border-radius: 5px;
   border: solid var(--main-color) 2px;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 #landing-page-product-section-article2 a:hover {
-  padding: 0.75%;
+  padding: 2%;
   background-color: var(--main-color);
   color: rgba(243, 241, 213, 0.8);
 }
