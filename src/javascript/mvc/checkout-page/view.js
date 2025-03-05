@@ -146,7 +146,7 @@ export class CheckoutView {
 		            Click below to Explore our lovely range of organic products`
 
 					a.id = "checkout-page-main-section-article-a"
-					a.href =`${window.location}/products.html`
+					a.href =`${window.location.hostname}/products.html`
 					a.textContent = "Click me!!"
 				}
 		/* condition to render a removed cart element, model removes cartitem from
