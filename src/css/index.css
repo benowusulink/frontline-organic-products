@@ -848,9 +848,7 @@ button {
 /* very small mobile screens */
 @media only screen and (max-width: 600px) {
 
-body{
-  border:  solid red 2px;
-}
+
 
 /*main section */
 #landing-page-article-p {
