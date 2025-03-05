@@ -1,6 +1,7 @@
 
 const startApp = () => {
   if (
+    window.location.pathname === "/" ||
     window.location.pathname === "/frontline-organic-products/" ||
     window.location.pathname === "/frontline-organic-products/index.html"
   ) {
