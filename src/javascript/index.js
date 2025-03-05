@@ -1,9 +1,8 @@
-console.log(window.location.pathname)
 
 const startApp = () => {
   if (
-    window.location.pathname === "/" ||
-    window.location.pathname === "/index.html"
+    window.location.pathname === "/frontline-organic-products/" ||
+    window.location.pathname === "/frontline-organic-products/index.html"
   ) {
     console.log("Index page");
 
@@ -18,7 +17,9 @@ const startApp = () => {
     } catch (e) {
       console.log("error importing indexcntroller", e);
     }
-  } else if (window.location.pathname === "/products.html") {
+  } else if (window.location.pathname === "/frontline-organic-products/products.html" ||
+    window.location.pathname === "/products.html"
+    ) {
     console.log("Product page");
 
     try {
@@ -33,7 +34,8 @@ const startApp = () => {
       console.log("error importing indexcntroller", e);
     }
   }
-else if (window.location.pathname === "/checkout.html") {
+else if (window.location.pathname === "/frontline-organic-products/checkout.html" || 
+  window.location.pathname === "/products.html") {
     console.log("Checkout page");
 
     try {
