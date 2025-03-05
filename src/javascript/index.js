@@ -1,3 +1,4 @@
+console.log(window.location.pathname)
 
 const startApp = () => {
   if (
