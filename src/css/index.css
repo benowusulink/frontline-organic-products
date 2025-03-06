@@ -1,7 +1,7 @@
 
 
 
-@media (max-width: 2550px) {
+@media (max-width: 4000px) {
   body{
     content: "Mobile styles applied!";
     background: green;
