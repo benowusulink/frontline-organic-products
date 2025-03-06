@@ -1,4 +1,8 @@
-
+  body{
+    content: "Mobile styles applied!";
+    background: blue !important;
+    color: white;
+  }
 
 
 @media only screen and (max-width: 10000px) {
