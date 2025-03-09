@@ -9,7 +9,6 @@ const startApp = () => {
     try {
       import("./mvc/index-page/controller.js")
         .then((res) => {
-          alert(`inner width:${window.innerWidth},width:${window.screen.width}`)
           new res.IndexController();
         })
         .catch((err) => {
