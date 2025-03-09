@@ -1,4 +1,3 @@
-
 const startApp = () => {
   if (
     window.location.pathname === "/" ||
@@ -10,6 +9,7 @@ const startApp = () => {
     try {
       import("./mvc/index-page/controller.js")
         .then((res) => {
+          alert(`inner width:${window.innerWidth},width:${window.screen.width}`)
           new res.IndexController();
         })
         .catch((err) => {
@@ -18,9 +18,10 @@ const startApp = () => {
     } catch (e) {
       console.log("error importing indexcntroller", e);
     }
-  } else if (window.location.pathname === "/frontline-organic-products/products.html" ||
+  } else if (
+    window.location.pathname === "/frontline-organic-products/products.html" ||
     window.location.pathname === "/products.html"
-    ) {
+  ) {
     console.log("Product page");
 
     try {
@@ -34,9 +35,10 @@ const startApp = () => {
     } catch (e) {
       console.log("error importing indexcntroller", e);
     }
-  }
-else if (window.location.pathname === "/frontline-organic-products/checkout.html" || 
-  window.location.pathname === "/products.html") {
+  } else if (
+    window.location.pathname === "/frontline-organic-products/checkout.html" ||
+    window.location.pathname === "/products.html"
+  ) {
     console.log("Checkout page");
 
     try {
