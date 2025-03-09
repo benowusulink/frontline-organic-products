@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel serve ./pages/index.html -p 3000 --open",
-    "build": "rm -r docs && parcel build ./pages/index.html --dist-dir docs --public-url ./ --no-optimize",
+    "build": "rm -r docs && parcel build ./pages/index.html --dist-dir docs --public-url ./",
     "pretty": "npx prettier --config ./utilities/prettier/.prettierrc --ignore-path ./utilities/prettier/.prettierignore --write ./"
   },
   "repository": {
