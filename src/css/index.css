@@ -561,7 +561,7 @@ button {
 
 /* landing page small screen */
 
-@media only screen and (max-width: 1250px) and (orientation:portrait) {
+@media all and (max-width: 1250px){
   :root {
     scroll-padding-top: 0px;
   }
@@ -827,7 +827,7 @@ button {
 }
 
 /* very small mobile screens */
-@media only screen and (max-width: 601px) and (orientation:portrait) and (orientation:landscape) {
+@media all and (max-width: 601px)  {
   /*main section */
   #landing-page-article-p {
     margin-top: 0;
