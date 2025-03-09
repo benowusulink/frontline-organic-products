@@ -37,7 +37,7 @@ const startApp = () => {
     }
   } else if (
     window.location.pathname === "/frontline-organic-products/checkout.html" ||
-    window.location.pathname === "/products.html"
+    window.location.pathname === "/checkout.html"
   ) {
     console.log("Checkout page");
 
