@@ -5,7 +5,7 @@
   --text-color: rgb(244, 206, 85);
   scroll-behavior: smooth;
   scroll-padding-top: 14.5vh;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue","Comic Sans MS", cursive, sans-serif;
 }
 
 @font-face {
@@ -24,6 +24,7 @@ body {
   background-color: whitesmoke;
   z-index: 0;
   overflow-x: hidden;
+
 }
 
 a {
