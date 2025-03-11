@@ -215,10 +215,15 @@
 }
 
 /* Styles for small screens (e.g., mobile devices) */
-@media only screen and (max-width: 1250px) {
+@media only screen and (min-width:0) and (max-width: 1250px) {
+
+  :root{
+    scroll-padding-top: 15vh;
+  }
   /* checkout-page-main page*/
   #checkout-page-main {
     padding-top: 0;
+    margin-top: 18vh;
   }
 
   .checkout-page-main-section-div-img {
@@ -332,6 +337,7 @@
     transition: 0.3s;
     margin: 1%;
     cursor: pointer;
+    margin-top: 2.5%;
   }
   #checkout-page-main-section2-button:hover {
     width: 16vw;
@@ -341,4 +347,46 @@
     background-color: var(--text-color);
     color: var(--main-color);
   }
+
+     #checkout-page-main-section-div-span-removeItem::before{
+    content: "Remove Item From Cart";
+   }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px){
+
+    #checkout-page-main {
+    padding-top: 0;
+    margin-top: 0
+  }
+
+   #checkout-page-main-section-div-span-minus {
+     font-size: 20px;
+     width: 20%;
+   }
+
+   #checkout-page-main-section-div-span-plus {
+     font-size: 20px;
+     width: 20%;
+   }
+
+  #checkout-page-main-section-div-span-quantity {
+     padding-top: 2%;
+     font-size: 11px;
+   }
+
+  #checkout-page-main-section-div-span-price {
+     font-size: 15px;
+   }
+
+   #checkout-page-main-section-div-span-removeItem::before{
+    content: "X";
+   }
+
+   #checkout-page-main-section2-button{
+    margin-top: 2.5%;
+    padding: 10%;
+
+   }
+
 }

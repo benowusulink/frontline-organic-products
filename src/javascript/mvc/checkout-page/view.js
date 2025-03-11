@@ -117,13 +117,13 @@ export class CheckoutView {
         spanRemoveItem.classList.add("checkout-page-main-section-div-span");
         spanRemoveItem.id = "checkout-page-main-section-div-span-removeItem";
         spanRemoveItem.name = product.productName;
-        spanRemoveItem.textContent = "Remove Item from Cart";
+        // added within css -> spanRemoveItem.textContent = "Remove Item from Cart";
 
         // caching cartitem elements within checkout view class
         this.cartItems.push(div1);
       });
 
-      this.checkoutTab.textContent = `Checkout: ${state.finalCheckoutItems.length}`;
+      this.checkoutTab.textContent = `Cart: ${state.finalCheckoutItems.length}`;
     } else {
       const noProducts = () => {
         const article = document.createElement("article");
@@ -319,7 +319,9 @@ export class CheckoutView {
   paymentButtonClick = (globalModelgoToPaymentButton) => {
     if (this.cartItems.length > 1) {
       this.checkoutButton.addEventListener("click", (event) => {
-        console.log(globalModelgoToPaymentButton());
+        const result = globalModelgoToPaymentButton();
+        alert(`Total Price: £${result.totalPrice}`)
+        console.log(result);
       });
     }
   };

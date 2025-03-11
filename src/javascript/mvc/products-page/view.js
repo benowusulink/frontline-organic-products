@@ -66,7 +66,7 @@ export class ProductView {
 
   updateCheckoutTabItemAmount = (state) => {
     if (state.checkoutPageItems.length >= 1) {
-      this.checkoutTab.textContent = `Checkout: ${state.checkoutPageItems.length}`;
+      this.checkoutTab.textContent = `Cart: ${state.checkoutPageItems.length}`;
     }
   };
 }
