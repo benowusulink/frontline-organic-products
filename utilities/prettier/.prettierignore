@@ -1,9 +1,8 @@
 node_modules/
-dist/
+docs/
 .git/
 package-lock.json
 package.json
-.husky/
 README.md
 utilities/
 .gitignore
