@@ -425,7 +425,7 @@ button {
 }
 
 #landing-page-aboutUs-section-article h3 {
-  font-family: hheaderFont, "Papyrus",-apple-system, BlinkMacSystemFont;
+  font-family: headerFont, "Papyrus",-apple-system, BlinkMacSystemFont;
 
   margin-bottom: 0px;
   border-bottom: solid 2px var(--main-color);
@@ -932,7 +932,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1%;
+    padding-right: 6%;
   }
 
    #landing-page-article-a{
