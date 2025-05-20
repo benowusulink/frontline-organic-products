@@ -9,6 +9,15 @@
   src: url("../assets/fonts/EuphoriaScript-Regular.ttf");
 }
 
+
+@media screen and (orientation: landscape) {
+  body {
+    background: red; /* for testing */
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
 /* root */
 :root {
   --main-color: rgba(6, 78, 59, 0.9);
@@ -21,7 +30,7 @@
 
 body {
   margin: 0px;
-  width: 100%;
+  min-width: 100%;
   height: auto;
   background-color: whitesmoke;
   z-index: 0;
