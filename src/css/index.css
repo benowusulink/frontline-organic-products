@@ -16,6 +16,7 @@
   scroll-behavior: smooth;
   scroll-padding-top: 14.5vh;
   font-family: "Helvetica Neue","Comic Sans MS", cursive, sans-serif;
+  width: 100%;
 }
 
 body {
